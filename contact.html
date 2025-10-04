@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Бесплатные онлайн-гайды по путешествиям – изучайте лучшие маршруты, советы опытных туристов и практические рекомендации для комфортных и увлекательных поездок."
+        />
+
+        <title>RoamNotes</title>
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="assets/images/logos/favicon.svg"
+        />
+
+        <link rel="stylesheet" href="assets/libs/aos-master/dist/aos.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header
+            class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100"
+        >
+            <div class="container">
+                <div
+                    class="header-wrapper d-flex align-items-center justify-content-between"
+                >
+                    <div class="logo">
+                        <a href="index.html" class="logo-white">
+                            <h3 style="color: #fff !important">RoamNotes</h3>
+                        </a>
+                        <a href="index.html" class="logo-dark">
+                            <h3 style="color: #fff !important">RoamNotes</h3>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="btn-group">
+                            <button
+                                class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
+                                type="button"
+                                data-bs-toggle="dropdown"
+                                data-bs-auto-close="true"
+                                aria-expanded="false"
+                            >
+                                <iconify-icon
+                                    icon="solar:hamburger-menu-line-duotone"
+                                    class="menu-icon fs-8 text-dark"
+                                ></iconify-icon>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end p-4">
+                                <div class="d-flex flex-column gap-6">
+                                    <div
+                                        class="hstack justify-content-between border-bottom pb-6"
+                                    >
+                                        <p class="mb-0 fs-5 text-dark">Меню</p>
+                                        <button
+                                            type="button"
+                                            class="btn-close opacity-75"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div class="d-flex flex-column gap-3">
+                                        <ul
+                                            class="header-menu list-unstyled mb-0 d-flex flex-column gap-2"
+                                        >
+                                            <li class="header-item">
+                                                <a
+                                                    href="index.html"
+                                                    aria-current="true"
+                                                    class="header-link hstack gap-2 fs-7 fw-bold text-dark"
+                                                    ><img
+                                                        src="assets/images/svgs/secondary-leaf.svg"
+                                                        alt=""
+                                                        width="20"
+                                                        height="20"
+                                                        class="img-fluid animate-spin"
+                                                    />Главная</a
+                                                >
+                                            </li>
+                                            <li class="header-item">
+                                                <a
+                                                    href="about-us.html"
+                                                    class="header-link hstack gap-2 fs-7 fw-bold text-dark"
+                                                    ><img
+                                                        src="assets/images/svgs/secondary-leaf.svg"
+                                                        alt=""
+                                                        width="20"
+                                                        height="20"
+                                                        class="img-fluid animate-spin"
+                                                    />О проекте</a
+                                                >
+                                            </li>
+                                            <li class="header-item">
+                                                <a
+                                                    href="projects.html"
+                                                    class="header-link hstack gap-2 fs-7 fw-bold text-dark"
+                                                    ><img
+                                                        src="assets/images/svgs/secondary-leaf.svg"
+                                                        alt=""
+                                                        width="20"
+                                                        height="20"
+                                                        class="img-fluid animate-spin"
+                                                    />Маршруты и советы</a
+                                                >
+                                            </li>
+                                            <li class="header-item">
+                                                <a
+                                                    href="blog.html"
+                                                    class="header-link hstack gap-2 fs-7 fw-bold text-dark"
+                                                    ><img
+                                                        src="assets/images/svgs/secondary-leaf.svg"
+                                                        alt=""
+                                                        width="20"
+                                                        height="20"
+                                                        class="img-fluid animate-spin"
+                                                    />Блог</a
+                                                >
+                                            </li>
+
+                                            <li class="header-item">
+                                                <a
+                                                    href="contact.html"
+                                                    class="header-link hstack gap-2 fs-7 fw-bold text-dark active"
+                                                    ><img
+                                                        src="assets/images/svgs/secondary-leaf.svg"
+                                                        alt=""
+                                                        width="20"
+                                                        height="20"
+                                                        class="img-fluid animate-spin"
+                                                    />Контакты</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a
+                                            class="text-dark"
+                                            href="tel:+1-212-456-7890"
+                                            >+77717138872</a
+                                        >
+                                        <a
+                                            class="fs-8 text-dark fw-bold"
+                                            href="mailto:roam_notes@gmail.com"
+                                            >roam_notes@gmail.com</a
+                                        >
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--  Page Wrapper -->
+        <div class="page-wrapper overflow-hidden">
+            <!--  Banner Section -->
+            <section
+                class="banner-section banner-inner-section position-relative overflow-hidden d-flex align-items-end"
+                style="
+                    background-image: url(assets/images/backgrounds/contact-banner.jpg);
+                "
+            >
+                <div class="container">
+                    <div
+                        class="d-flex flex-column gap-4 pb-5 pb-xl-10 position-relative z-1"
+                    >
+                        <div class="row align-items-center">
+                            <div class="col-xl-4">
+                                <div
+                                    class="d-flex align-items-center gap-4"
+                                    data-aos="fade-up"
+                                    data-aos-delay="100"
+                                    data-aos-duration="1000"
+                                >
+                                    <img
+                                        src="assets/images/svgs/primary-leaf.svg"
+                                        alt=""
+                                        class="img-fluid animate-spin"
+                                    />
+                                    <p
+                                        class="mb-0 text-white fs-5 text-opacity-70"
+                                    >
+                                        Хотите открыть новые маршруты с
+                                        <span class="text-primary"
+                                            >путеводителями и туристическими
+                                            советами</span
+                                        >? Свяжитесь с нами — мы ответим на все
+                                        вопросы о путешествиях, маршрутах и
+                                        планировании.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="d-flex align-items-end gap-3"
+                            data-aos="fade-up"
+                            data-aos-delay="200"
+                            data-aos-duration="1000"
+                        >
+                            <h1 class="mb-0 fs-16 text-white lh-1">Контакты</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--  Get in touch Section -->
+            <section class="get-in-touch py-5 py-lg-11 py-xl-12">
+                <div class="container">
+                    <div class="d-flex flex-column gap-5 gap-xl-10">
+                        <div class="row gap-7 gap-xl-0">
+                            <div class="col-xl-4 col-xxl-4">
+                                <div
+                                    class="d-flex align-items-center gap-7 py-2"
+                                    data-aos="fade-right"
+                                    data-aos-delay="100"
+                                    data-aos-duration="1000"
+                                >
+                                    <span
+                                        class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium"
+                                        >05</span
+                                    >
+                                    <hr class="border-line bg-white" />
+                                    <span class="badge text-bg-dark"
+                                        >Контакты</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-xxl-7">
+                                <div class="row">
+                                    <div class="col-xxl-8">
+                                        <div
+                                            class="d-flex flex-column gap-6"
+                                            data-aos="fade-up"
+                                            data-aos-delay="100"
+                                            data-aos-duration="1000"
+                                        >
+                                            <h2 class="mb-0">
+                                                Свяжитесь с нами
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between gap-7 gap-xl-0">
+                            <div class="col-xl-3">
+                                <p
+                                    class="mb-0 fs-5"
+                                    data-aos="fade-right"
+                                    data-aos-delay="100"
+                                    data-aos-duration="1000"
+                                >
+                                    Есть вопросы о путешествиях, выборе
+                                    маршрутов или советах для туристов? Напишите
+                                    нам, и мы поможем спланировать ваше
+                                    идеальное путешествие.
+                                </p>
+                            </div>
+                            <div class="col-xl-8">
+                                <form
+                                    class="d-flex flex-column gap-7"
+                                    data-aos="fade-up"
+                                    data-aos-delay="200"
+                                    data-aos-duration="1000"
+                                    method="get"
+                                    action="thanks.html"
+                                >
+                                    <div>
+                                        <input
+                                            type="text"
+                                            class="form-control border-bottom border-dark"
+                                            id="formGroupExampleInput"
+                                            placeholder="Имя"
+                                            required
+                                        />
+                                    </div>
+                                    <div>
+                                        <input
+                                            type="email"
+                                            class="form-control border-bottom border-dark"
+                                            id="exampleInputEmail1"
+                                            placeholder="E-Mail"
+                                            aria-describedby="emailHelp"
+                                            required
+                                        />
+                                    </div>
+                                    <div>
+                                        <textarea
+                                            class="form-control border-bottom border-dark"
+                                            id="exampleFormControlTextarea1"
+                                            placeholder="Ваше сообщение"
+                                            required
+                                            rows="3"
+                                        ></textarea>
+                                    </div>
+                                    <button
+                                        type="submit"
+                                        class="btn w-100 justify-content-center"
+                                    >
+                                        <span class="btn-text"
+                                            >Отправить сообщение</span
+                                        >
+                                        <iconify-icon
+                                            icon="lucide:arrow-up-right"
+                                            class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"
+                                        ></iconify-icon>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d346436.17832345876!2d76.6132759702197!3d43.305320196840306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836ef33ad42b35%3A0xb0e4c7cd23be8091!2s%22Ken%20Dala%22%20business%20center!5e0!3m2!1suk!2sua!4v1759590472631!5m2!1suk!2sua"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+
+        <footer class="footer bg-dark py-5 py-lg-11 py-xl-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 mb-8 mb-xl-0">
+                        <div class="d-flex flex-column gap-8 pe-xl-5">
+                            <h2 class="mb-0 text-white">
+                                Вопросы по путеводителям и маршрутам?
+                            </h2>
+                            <div class="d-flex flex-column gap-2">
+                                <a
+                                    target="_blank"
+                                    class="link-hover hstack gap-3 text-white fs-5"
+                                >
+                                    <iconify-icon
+                                        icon="lucide:arrow-up-right"
+                                        class="fs-7 text-primary"
+                                    ></iconify-icon>
+                                    roam_notes@gmail.com
+                                </a>
+                                <a
+                                    target="_blank"
+                                    class="link-hover hstack gap-3 text-white fs-5"
+                                >
+                                    <iconify-icon
+                                        icon="lucide:arrow-up-right"
+                                        class="fs-7 text-primary"
+                                    ></iconify-icon>
+                                    +77717138872
+                                </a>
+                                <a
+                                    target="_blank"
+                                    class="link-hover hstack gap-3 text-white fs-5"
+                                >
+                                    <iconify-icon
+                                        icon="lucide:map-pin"
+                                        class="fs-7 text-primary"
+                                    ></iconify-icon>
+                                    Достық даңғылы 38, Алматы 050010, Казахстан
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xl-3 mb-8 mb-xl-0">
+                        <ul
+                            class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2"
+                        >
+                            <li>
+                                <a
+                                    class="link-hover fs-5 text-white"
+                                    href="index.html"
+                                    >Главная</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="link-hover fs-5 text-white"
+                                    href="about-us.html"
+                                    >О нас</a
+                                >
+                            </li>
+
+                            <li>
+                                <a
+                                    class="link-hover fs-5 text-white"
+                                    href="privacy-policy.html"
+                                    >Политика конфиденциальности</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="link-hover fs-5 text-white"
+                                    href="cookie-policy.html"
+                                    >Политика использования Cookie</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="link-hover fs-5 text-white"
+                                    href="terms-and-conditions.html"
+                                    >Условия использования</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xl-3 mb-8 mb-xl-0">
+                        <h4 class="mb-0 text-white">О наших путеводителях</h4>
+                        <p class="text-white">
+                            Наши путеводители и советы по маршрутам
+                            предоставляют практическую информацию для
+                            планирования путешествий, выбора маршрутов и
+                            изучения интересных мест. Подходят для всех, кто
+                            хочет путешествовать с комфортом и безопасностью.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="get-template hstack gap-2">
+            <button
+                class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0"
+                id="scrollToTopBtn"
+            >
+                <iconify-icon
+                    icon="lucide:arrow-up"
+                    class="fs-7 text-dark"
+                ></iconify-icon>
+            </button>
+        </div>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Использование Cookies</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Этот сайт использует cookies, чтобы обеспечить лучший и
+                    безопасный доступ к нашим материалам по путеводителям и
+                    маршрутам.
+                    <a href="cookie-policy.html">Подробнее...</a>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Принять</button>
+                <button class="cookie-button" id="declineBtn">Отклонить</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+        <script src="assets/libs/aos-master/dist/aos.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/cookiebanner.js"></script>
+        <!-- solar icons -->
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    </body>
+</html>

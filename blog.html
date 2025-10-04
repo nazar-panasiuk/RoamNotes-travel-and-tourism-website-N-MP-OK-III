@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Бесплатные онлайн-гайды по путешествиям – изучайте лучшие маршруты, советы опытных туристов и практические рекомендации для комфортных и увлекательных поездок."
+        />
+
+        <title>RoamNotes</title>
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="assets/images/logos/favicon.svg"
+        />
+
+        <link rel="stylesheet" href="assets/libs/aos-master/dist/aos.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header
+            class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100"
+        >
+            <div class="container">
+                <div
+                    class="header-wrapper d-flex align-items-center justify-content-between"
+                >
+                    <div class="logo">
+                        <a href="index.html" class="logo-white">
+                            <h3 style="color: #fff !important">RoamNotes</h3>
+                        </a>
+                        <a href="index.html" class="logo-dark">
+                            <h3 style="color: #fff !important">RoamNotes</h3>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="btn-group">
+                            <button
+                                class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
+                                type="button"
+                                data-bs-toggle="dropdown"
+                                data-bs-auto-close="true"
+                                aria-expanded="false"
+                            >
+                                <iconify-icon
+                                    icon="solar:hamburger-menu-line-duotone"
+                                    class="menu-icon fs-8 text-dark"
+                                ></iconify-icon>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end p-4">
+                                <div class="d-flex flex-column gap-6">
+                                    <div
+                                        class="hstack justify-content-between border-bottom pb-6"
+                                    >
+                                        <p class="mb-0 fs-5 text-dark">Меню</p>
+                                        <button
+                                            type="button"
+                                            class="btn-close opacity-75"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div class="d-flex flex-column gap-3">
+                                        <ul
+                                            class="header-menu list-unstyled mb-0 d-flex flex-column gap-2"
+                                        >
+                                            <li class="header-item">
+                                                <a
+                                                    href="index.html"
+                                                    aria-current="true"
+                                                    class="header-link hstack gap-2 fs-7 fw-bold text-dark"
+                                                    ><img
+                                                        src="assets/images/svgs/secondary-leaf.svg"
+                                                        alt=""
+                                                        width="20"
+                                                        height="20"
+                                                        class="img-fluid animate-spin"
+                                                    />Главная</a
+                                                >
+                                            </li>
+                                            <li class="header-item">
+                                                <a
+                                                    href="about-us.html"
+                                                    class="header-link hstack gap-2 fs-7 fw-bold text-dark"
+                                                    ><img
+                                                        src="assets/images/svgs/secondary-leaf.svg"
+                                                        alt=""
+                                                        width="20"
+                                                        height="20"
+                                                        class="img-fluid animate-spin"
+                                                    />О проекте</a
+                                                >
+                                            </li>
+                                            <li class="header-item">
+                                                <a
+                                                    href="projects.html"
+                                                    class="header-link hstack gap-2 fs-7 fw-bold text-dark"
+                                                    ><img
+                                                        src="assets/images/svgs/secondary-leaf.svg"
+                                                        alt=""
+                                                        width="20"
+                                                        height="20"
+                                                        class="img-fluid animate-spin"
+                                                    />Маршруты и советы</a
+                                                >
+                                            </li>
+                                            <li class="header-item">
+                                                <a
+                                                    href="blog.html"
+                                                    class="header-link hstack gap-2 fs-7 fw-bold text-dark active"
+                                                    ><img
+                                                        src="assets/images/svgs/secondary-leaf.svg"
+                                                        alt=""
+                                                        width="20"
+                                                        height="20"
+                                                        class="img-fluid animate-spin"
+                                                    />Блог</a
+                                                >
+                                            </li>
+
+                                            <li class="header-item">
+                                                <a
+                                                    href="contact.html"
+                                                    class="header-link hstack gap-2 fs-7 fw-bold text-dark"
+                                                    ><img
+                                                        src="assets/images/svgs/secondary-leaf.svg"
+                                                        alt=""
+                                                        width="20"
+                                                        height="20"
+                                                        class="img-fluid animate-spin"
+                                                    />Контакты</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a
+                                            class="text-dark"
+                                            href="tel:+1-212-456-7890"
+                                            >+77717138872</a
+                                        >
+                                        <a
+                                            class="fs-8 text-dark fw-bold"
+                                            href="mailto:roam_notes@gmail.com"
+                                            >roam_notes@gmail.com</a
+                                        >
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--  Page Wrapper -->
+        <div class="page-wrapper overflow-hidden">
+            <!--  Banner Section -->
+            <section
+                class="banner-section banner-inner-section position-relative overflow-hidden d-flex align-items-end"
+                style="
+                    background-image: url(assets/images/backgrounds/blog-banner.jpg);
+                "
+            >
+                <div class="container">
+                    <div
+                        class="d-flex flex-column gap-4 pb-5 pb-xl-10 position-relative z-1"
+                    >
+                        <div class="row align-items-center">
+                            <div class="col-xl-4">
+                                <div
+                                    class="d-flex align-items-center gap-4"
+                                    data-aos="fade-up"
+                                    data-aos-delay="100"
+                                    data-aos-duration="1000"
+                                >
+                                    <img
+                                        src="assets/images/svgs/primary-leaf.svg"
+                                        alt=""
+                                        class="img-fluid animate-spin"
+                                    />
+                                    <p
+                                        class="mb-0 text-white fs-5 text-opacity-70"
+                                    >
+                                        Готовы открыть новые маршруты с
+                                        <span class="text-primary"
+                                            >путеводителями и советами для
+                                            путешествий</span
+                                        >? Здесь вы найдете полезные статьи,
+                                        маршруты и рекомендации для комфортного
+                                        и безопасного путешествия.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="d-flex align-items-end gap-3"
+                            data-aos="fade-up"
+                            data-aos-delay="200"
+                            data-aos-duration="1000"
+                        >
+                            <h1 class="mb-0 fs-16 text-white lh-1">Блог</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--  Blog Section -->
+            <section class="blog-section py-5 py-lg-11 py-xl-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 mb-7">
+                            <div
+                                class="resources d-flex flex-column gap-6"
+                                data-aos="fade-up"
+                                data-aos-delay="100"
+                                data-aos-duration="1000"
+                            >
+                                <a
+                                    class="resources-img resources-img-blog position-relative overflow-hidden d-block"
+                                >
+                                    <img
+                                        src="assets/images/resources/resources-1.jpg"
+                                        alt="resources"
+                                        class="img-fluid"
+                                    />
+                                </a>
+                                <div class="resources-details">
+                                    <p class="mb-0">24. Окт 2025</p>
+                                    <h4 class="mb-0">
+                                        Путеводитель по Алматы: главные
+                                        достопримечательности и советы
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-7">
+                            <div
+                                class="resources d-flex flex-column gap-6"
+                                data-aos="fade-up"
+                                data-aos-delay="200"
+                                data-aos-duration="1000"
+                            >
+                                <a
+                                    class="resources-img resources-img-blog position-relative overflow-hidden d-block"
+                                >
+                                    <img
+                                        src="assets/images/resources/resources-2.jpg"
+                                        alt="resources"
+                                        class="img-fluid"
+                                    />
+                                </a>
+                                <div class="resources-details">
+                                    <p class="mb-0">24. Окт 2025</p>
+                                    <h4 class="mb-0">
+                                        Лучшие маршруты для однодневных
+                                        путешествий по Казахстану
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-7">
+                            <div
+                                class="resources d-flex flex-column gap-6"
+                                data-aos="fade-up"
+                                data-aos-delay="300"
+                                data-aos-duration="1000"
+                            >
+                                <a
+                                    class="resources-img resources-img-blog position-relative overflow-hidden d-block"
+                                >
+                                    <img
+                                        src="assets/images/resources/resources-3.jpg"
+                                        alt="resources"
+                                        class="img-fluid"
+                                    />
+                                </a>
+                                <div class="resources-details">
+                                    <p class="mb-0">24. Окт 2025</p>
+                                    <h4 class="mb-0">
+                                        Советы по планированию безопасных и
+                                        интересных маршрутов
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-7">
+                            <div
+                                class="resources d-flex flex-column gap-6"
+                                data-aos="fade-up"
+                                data-aos-delay="400"
+                                data-aos-duration="1000"
+                            >
+                                <a
+                                    class="resources-img resources-img-blog position-relative overflow-hidden d-block"
+                                >
+                                    <img
+                                        src="assets/images/services/services-img-1.jpg"
+                                        alt="resources"
+                                        class="img-fluid"
+                                    />
+                                </a>
+                                <div class="resources-details">
+                                    <p class="mb-0">24. Окт 2025</p>
+                                    <h4 class="mb-0">
+                                        Путешествия для начинающих: маршруты,
+                                        советы и полезные лайфхаки
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer bg-dark py-5 py-lg-11 py-xl-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 mb-8 mb-xl-0">
+                        <div class="d-flex flex-column gap-8 pe-xl-5">
+                            <h2 class="mb-0 text-white">
+                                Вопросы по путеводителям и маршрутам?
+                            </h2>
+                            <div class="d-flex flex-column gap-2">
+                                <a
+                                    target="_blank"
+                                    class="link-hover hstack gap-3 text-white fs-5"
+                                >
+                                    <iconify-icon
+                                        icon="lucide:arrow-up-right"
+                                        class="fs-7 text-primary"
+                                    ></iconify-icon>
+                                    roam_notes@gmail.com
+                                </a>
+                                <a
+                                    target="_blank"
+                                    class="link-hover hstack gap-3 text-white fs-5"
+                                >
+                                    <iconify-icon
+                                        icon="lucide:arrow-up-right"
+                                        class="fs-7 text-primary"
+                                    ></iconify-icon>
+                                    +77717138872
+                                </a>
+                                <a
+                                    target="_blank"
+                                    class="link-hover hstack gap-3 text-white fs-5"
+                                >
+                                    <iconify-icon
+                                        icon="lucide:map-pin"
+                                        class="fs-7 text-primary"
+                                    ></iconify-icon>
+                                    Достық даңғылы 38, Алматы 050010, Казахстан
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xl-3 mb-8 mb-xl-0">
+                        <ul
+                            class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2"
+                        >
+                            <li>
+                                <a
+                                    class="link-hover fs-5 text-white"
+                                    href="index.html"
+                                    >Главная</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="link-hover fs-5 text-white"
+                                    href="about-us.html"
+                                    >О нас</a
+                                >
+                            </li>
+
+                            <li>
+                                <a
+                                    class="link-hover fs-5 text-white"
+                                    href="privacy-policy.html"
+                                    >Политика конфиденциальности</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="link-hover fs-5 text-white"
+                                    href="cookie-policy.html"
+                                    >Политика использования Cookie</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="link-hover fs-5 text-white"
+                                    href="terms-and-conditions.html"
+                                    >Условия использования</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xl-3 mb-8 mb-xl-0">
+                        <h4 class="mb-0 text-white">О наших путеводителях</h4>
+                        <p class="text-white">
+                            Наши путеводители и советы по маршрутам
+                            предоставляют практическую информацию для
+                            планирования путешествий, выбора маршрутов и
+                            изучения интересных мест. Подходят для всех, кто
+                            хочет путешествовать с комфортом и безопасностью.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="get-template hstack gap-2">
+            <button
+                class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0"
+                id="scrollToTopBtn"
+            >
+                <iconify-icon
+                    icon="lucide:arrow-up"
+                    class="fs-7 text-dark"
+                ></iconify-icon>
+            </button>
+        </div>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Использование Cookies</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Этот сайт использует cookies, чтобы обеспечить лучший и
+                    безопасный доступ к нашим материалам по путеводителям и
+                    маршрутам.
+                    <a href="cookie-policy.html">Подробнее...</a>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Принять</button>
+                <button class="cookie-button" id="declineBtn">Отклонить</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+        <script src="assets/libs/aos-master/dist/aos.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/cookiebanner.js"></script>
+        <!-- solar icons -->
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    </body>
+</html>
